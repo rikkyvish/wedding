@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
                 <!-- page title -->
-                <h2 class="title1 couple-title1 title1-border">Send Your Wishes & Love</h2>	
+                <h2 class="title1 couple-title1 title1-border">Send Your Wishes & Love 123</h2>	
                 <!-- /page title -->
                 <div class="row">
                     <!-- RSVP -->
