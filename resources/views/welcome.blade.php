@@ -218,9 +218,9 @@
         <!-- /Countdown Container -->
     </div>
     <div class="page-content" id="app">
-        <Component2 />	
+        <Component2 />
     </div>
-
+    
     <div class="page-content">				
         <div class="row">
             <!-- content here -->
@@ -235,7 +235,7 @@
                             <!-- /Blog Posts -->										
                             <!--=== Blog Comments -->
                             <div class="blog-comments">
-                                <h2 class="blog-single-title title1-border">All Love & Wishes</h2>
+                                <h2 class="blog-single-title title1-border">Love & Wishes</h2>
                                 
                                 <!-- /Comments Form -->
 
@@ -292,11 +292,7 @@
             <!-- /content here -->				
         </div>
     </div>  
-   
     
-    
-    <!-- /content -->
-    <!-- footer -->
     <footer id="footer">
         <p class="footer-icon"><img src="img/ft-icon.png" alt=""></p>
           <p class="quote-content">"When i saw you i fell in love, and you smiled because you knew."</p>
@@ -304,5 +300,7 @@
     </footer>
     <!-- /footer -->
 </div>
+
+
 <script src="{{ asset('js/app.js')}}"></script>   
 @endsection
