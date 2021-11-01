@@ -59,6 +59,28 @@
     </div>
 
     <div class="col-md-12">
+        <div class="card ">
+            
+            <div class="card-body">
+
+                <form method="post" action='/livekey/1' >
+                    @csrf
+                    
+                    
+                    <div class="form-group">
+                        <label>Enter Live Key</label>
+                        <input class="fom-control" name="livekey" placeholder="https://youtu.be/I9Y32hifJxc" />
+                        <input type="submit" class="btn btn-success" value="Change Live Stream key"/>
+                    </div>
+                        
+                    
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
         <div id="app">
             <example-component></example-component>
         </div>

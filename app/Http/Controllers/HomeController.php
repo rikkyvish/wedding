@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use App\Models\Comment;
 
 
+
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -26,6 +28,7 @@ class HomeController extends Controller
     public function index()
     {
         $comments = Comment::all();
+        
         if(auth()->user()->name == 'admin') {
             return view('home', compact('comments'));
 
@@ -38,4 +41,6 @@ class HomeController extends Controller
         $affectedRows = Comment::where('id', '=', $id)->update(array('approved' => 1));
         return redirect()->route('home');
     }
+
+    
 }

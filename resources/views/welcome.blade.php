@@ -52,6 +52,20 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h2 class="title1 couple-title1 title1-border">Live stream on 20 & 21 Nov 2021</h2>
+                <div class="video">
+                    @foreach ($livekeys as $item)
+                    <iframe width="100%" height="355" src="{{$item->livekey}}" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    @endforeach
+                    
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
                         <!-- Groom -->
                         <div class="col-sm-6">									
                             <div class="about-item">

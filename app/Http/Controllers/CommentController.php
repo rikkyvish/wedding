@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use App\Models\Livekey;
 
 class CommentController extends Controller
 {
@@ -75,8 +76,9 @@ class CommentController extends Controller
 
     public function getAllComment()
     {
+        $livekeys = Livekey::all();
         $comments = Comment::where('approved', 1)->orderBy('id')->get();
-        return view('welcome', compact('comments'));
+        return view('welcome', compact('comments','livekeys'));
     }
 
     

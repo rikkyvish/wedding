@@ -21,6 +21,8 @@ Route::get('/', 'CommentController@getAllComment');
 
 Route::post('/accept/{id}','HomeController@approveComment');
 
+Route::post('/livekey/{key}', 'LivekeyController@update');
+
 // Route::get('/home', 'CommentController@AllComment');
 
 Auth::routes();
