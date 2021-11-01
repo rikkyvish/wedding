@@ -14,6 +14,7 @@ class CommentController extends Controller
      */
     public function index()
     {
+        
         $comment = Comment::where('approved', 1)->orderBy('id')->get();
                 
         return $comment;
@@ -77,4 +78,6 @@ class CommentController extends Controller
         $comments = Comment::where('approved', 1)->orderBy('id')->get();
         return view('welcome', compact('comments'));
     }
+
+    
 }

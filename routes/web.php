@@ -18,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', 'CommentController@getAllComment');
+
+Route::post('/accept/{id}','HomeController@approveComment');
+
+// Route::get('/home', 'CommentController@AllComment');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
